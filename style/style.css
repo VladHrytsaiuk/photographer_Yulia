@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+
+/* @font-face {
+	font-family: "Nyght Serif";
+	src:
+	  url("/font/NyghtSerif-Regular.ttf") format("TrueType"),
+	  url("/font/NyghtSerif-RegularItalic.ttf") format("TrueType"),
+	  url("/font/NyghtSerif-Bold.ttf") format("TrueType");
+  } */
+
+@font-face {
+	font-family: "NyghtSerif";
+	src: local("NyghtSerif RegularItalic"), local("NyghtSerif-RegularItalic"),
+		url("/font/NyghtSerif-RegularItalic.ttf");
+	font-weight: 400;
+}
+
+.mobi {
+	display: none !important;
+}
+
+
+
+html,
+body {
+	height: 100%;
+	font-family: montserrat;
+	color: #310010;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100vh;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1180px;
+	margin: auto;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.main_slider {
+	margin-top: 88.8px;
+}
+
+
+.main_slider {}
+
+.swiper-slide {}
+
+.slider__img {
+	height: calc(100vh - 88.8px);
+	filter: brightness(80%);
+	width: 100%;
+}
+
+.slider__img-1 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/slider/1.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slider__img-2 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/slider/2.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slider__img-3 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/slider/3.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slider__img-4 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/slider/4.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slider__img-5 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/slider/5.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.button-prev,
+.button-next {
+	cursor: pointer;
+}
+
+.slider_navigation {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	bottom: 0;
+	z-index: 99999;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	left: calc(50% - 590px);
+}
+
+:root {
+	--swiper-pagination-color: #FFFFFF;
+	--swiper-pagination-bullet-size: 20px;
+	--swiper-pagination-bullet-width: 20px;
+	--swiper-pagination-bullet-height: 20px;
+	--swiper-pagination-bullet-inactive-color: #FFFFFF;
+	--swiper-pagination-bullet-inactive-opacity: 0.5;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-border-radius: 0;
+	--swiper-pagination-bullet-horizontal-gap: 20px;
+	--swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.about_me {
+	padding: 100px 0;
+}
+
+.about_me__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about_me__info>span {
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.about_me__info p {
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	/* 30px */
+}
+
+.about_me__info p:first-of-type {
+	margin: 20px 0;
+}
+
+.about_me__info>div>div {
+
+	display: flex;
+	align-items: center;
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.about_me__info>div>div>span {
+	color: #FECDAA;
+	font-family: NyghtSerif;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: normal;
+	margin-right: 20px;
+}
+
+
+.about_me__title h2 {
+	flex: 0 0 50%;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg) !important;
+	color: #414042;
+	font-family: NyghtSerif;
+	font-size: 64px;
+	/* font-style: italic; */
+	font-weight: 400;
+	line-height: normal;
+	/* width: 300px; */
+	text-align: right;
+
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.hr_title {
+	flex: 0 0 50%;
+	background: #414042;
+	width: 2px;
+	height: 100px;
+	transform: none;
+}
+
+
+.about_me__photo {
+	flex: 0 0 40%;
+	height: auto;
+}
+
+.about_me__info {
+	flex: 0 0 40%;
+}
+
+.about_me__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	flex: 0 0 20%;
+}
+
+
+
+.my_photo {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/me.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 100%;
+}
+
+.my_services {
+	padding: 75px 0;
+	background-color: #414042;
+	align-items: center;
+}
+
+.my_services-title {
+	display: flex;
+	flex-direction: row;
+	color: #FECDAA;
+	font-family: NyghtSerif;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.hr_sevices {
+	background: #FECDAA;
+	height: 2px;
+	width: 300px;
+}
+
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}
+
+.service-title {
+	color: #F9F9F9;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.service-description {
+	color: #F9F9F9;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0 0 10px 0;
+}
+
+
+
+.why_me {
+	background: #414042;
+	padding: 100px 0;
+}
+
+
+.container {}
+
+.row {}
+
+.why {
+	gap: 120px;
+	height: auto;
+}
+
+.why_me-photo {
+	width: 100%;
+}
+
+.why-photo {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/advantage.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.why_info {}
+
+.why_info-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.why_info-title h2 {
+	flex: 0 0 55%;
+	color: #F9F9F9;
+	font-family: NyghtSerif;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.why_info-title hr {
+	flex: 0 0 45%;
+	height: 2px;
+	width: 80%;
+	background: #F9F9F9;
+}
+
+.advantage {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+
+.advantage_number {
+	color: #FECDAA;
+	font-family: NyghtSerif;
+	font-size: 96px;
+	font-weight: 400;
+	line-height: normal;
+	margin-right: 50px;
+	text-align: start;
+	flex: 0 0 20%;
+}
+
+.advantage-title {
+	color: #F9F9F9;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.advantage-description {
+	color: #F9F9F9;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	/* 24px */
+}
+
+
+
+
+.portfolio {
+	padding: 100px 0;
+}
+
+
+.portfolio__title h2 {
+	flex: 0 0 60%;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	color: #414042;
+	font-family: NyghtSerif;
+	font-size: 64px;
+	/* font-style: italic; */
+	font-weight: 400;
+	line-height: normal;
+	/* width: 300px; */
+	text-align: right;
+
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+
+.portfolio__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	flex: 0 0 20%;
+}
+
+
+
+
+.hr_portfolio-title {
+	flex: 0 0 40%;
+	background: #414042;
+	width: 2px;
+	transform: none;
+}
+
+.portfolio_block-text {
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+
+.portfolio_block-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 250px;
+	gap: 20px;
+}
+
+.portfolio_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0 0 40%;
+}
+
+.portfolio_block-photo-1 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/1.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-2 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/2.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-3 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/3.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.portfolio_block-photo-4 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/4.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.portfolio_block-photo-5 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/5.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-6 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/6.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-7 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/7.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-8 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/8.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.portfolio_block-photo-9 {
+	background-image: url("https://vladhrytsaiuk.github.io/photographer_Yulia/media/photo/portfolio/9.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.portfolio_block-button a {
+	background: #414042;
+	padding: 13px 46px;
+	color: #F9F9F9;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.portfolio_block-button {
+	margin-bottom: 9px;
+}
+
+
+
+
+.contacts {
+	padding: 100px 0;
+}
+
+.contacts__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.map {
+	border: 1px solid;
+}
+
+.contacts__info>span {
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.contacts__info p {
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	/* 30px */
+}
+
+.contacts__info p:first-of-type {
+	margin: 10px 0;
+}
+
+.contacts__info>div>div,
+.contacts__info>div>a {
+
+	display: flex;
+	align-items: center;
+	color: #414042;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.contacts__info>div>a {
+	text-decoration: none;
+}
+
+
+
+.contacts__title h2 {
+	flex: 0 0 40%;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	color: #414042;
+	font-family: NyghtSerif;
+	font-size: 64px;
+	/* font-style: italic; */
+	font-weight: 400;
+	line-height: normal;
+	/* width: 300px; */
+	text-align: right;
+
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.hr_contact-title {
+	flex: 0 0 50%;
+	background: #414042;
+	width: 2px;
+	height: 100px;
+	transform: none;
+}
+
+.contacts__photo {
+	flex: 0 0 40%;
+	height: auto;
+}
+
+.about_me__info {
+	flex: 0 0 40%;
+}
+
+.contacts__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	flex: 0 0 20%;
+}
+
+.map {
+	height: 100%;
+}
+
+.contacts__info .row>svg {
+	margin-right: 10px;
+}
+
+
+
+.contact_location p {
+	color: #414042;
+	font-size: 24px;
+}
+
+.contact_phone p {
+	color: #414042;
+	font-size: 24px;
+}
+
+.contact_inst p {
+	color: #414042;
+	font-size: 24px;
+}
+
+.contacts__info span:first-of-type {
+	margin: 0 0 10px 0;
+}
+
+.contacts__info span:last-of-type {
+	margin: 48px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	padding: 30px 0;
+	background-color: #414042;
+}
+
+.menu_footer {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .menu__list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-logo {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.footer-logo span {
+	margin: auto;
+	color: #FECDAA;
+	font-family: NyghtSerif;
+	font-size: 78px;
+
+	font-weight: 400;
+	line-height: normal;
+}
+
+.footer-logo p {
+	color: #FECDAA;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.copyright {
+	margin-top: 70px;
+}
+
+.copyright p {
+	color: rgba(255, 255, 255, 0.30);
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+
+
+.contacts__info>div>svg {
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== */

@@ -1,0 +1,50 @@
+.portfolioPage {
+    padding: 150px 0;
+}
+
+.portfolioPage__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolioPage__title h2 {
+    flex: 0 0 30%;
+    color: #414042;
+    font-family: NyghtSerif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 20px;
+}
+
+.portfolioPage__title p {
+    flex: 0 0 50%;
+    color: #414042;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 40px;
+}
+
+.hr_portfolioPage-title {
+    height: 2px;
+    width: 100%;
+}
+
+
+
+.portfolio_block-grid {
+    grid-auto-rows: 400px;
+    margin-top: 50px;
+}
+
+.portfolio_block-photo {
+    background-position: 50% 20%;
+}
+
+.portfolio_block-button {
+    margin-top: 33px;
+}
